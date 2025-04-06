@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>login page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    body {
+      background: #e7e7ec;
+      font-family: 'Lexend', sans-serif;
+      position: relative;
+    }
+    h1 {
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      font-size: 4em;
+      color: #000000;
+      white-space: nowrap;
+    }
+    #loginContainer {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    #loginContainer form {
+      margin: 0;
+    }
+    #loginContainer input[type="text"] {
+      width: 500px;
+      height: 50px;
+      padding: 0 20px;
+      font-size: 1.5em;
+      border: 2px solid #ffffff;
+      border-radius: 18px;
+      outline: none;
+    }
+    #loginContainer button {
+      width: 545px;
+      height: 50px;
+      margin-top: 11px;
+      font-size: 1.5em;
+      border: none;
+      border-radius: 18px;
+      background-color: #0000ff;
+      color: #f7f7f7;
+      cursor: pointer;
+    }
+    #loginContainer button:hover {
+      background-color: #d9dde0;
+    }
+    #forgotPassword {
+      display: block;
+      width: 500px;
+      margin: 5px auto 0 auto;
+      font-size: 0.8em;
+      color: #ff0404;
+      text-decoration: none;
+      text-align: left;
+    }
+    #Createone {
+      position: absolute;
+      top: 43%;
+      left: 43%;
+      transform: translate(-50%);
+      text-align: center;
+      color: #100f0f;
+    }
+    #one {
+      position: absolute;
+      top: 43%;
+      left: 64%;
+      transform: translate(-50%);
+      text-align: center;
+      color: #0000ff;
+    }
+    #otherAccounts {
+      position: absolute;
+      top: 46.3%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #100f0f;
+    }
+    #otherAccounts p {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+    #accountIcons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .icon {
+      width: 50px;
+      height: 50px;
+      background: #181717;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .icon2 {
+      width: 50px;
+      height: 50px;
+      background: #4267B2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .icon2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .icon3 {
+      width: 50px;
+      height: 50px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .icon3 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    img.logo {
+      position: absolute;
+      top: 65%;
+      left: 53%;
+      transform: translateX(-50%);
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+    img.logo:hover {
+      transform: translateX(-50%) scale(1.2);
+    }
+    
+  </style>
+</head>
+<body>
+  <h1 id="welcomeTitle">Login</h1>
+  <div id="loginContainer">
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Email or Phone">
+      <button type="submit">Sign In</button>
+    </form>
+    <a href="#" id="forgotPassword">Forgot password?</a>
+  </div>
+</form>
+<a href="#" id="Createone">Don't have an account? </a>
+</div>
+</form>
+<a href="#" id="one"> create one</a>
+</div>
+  <div id="otherAccounts">
+    <p>Log in with other accounts</p>
+    <div id="accountIcons">
+      <div class="icon3"><img src="images/google.jpg" alt="Google"></div>
+      <div class="icon2"><img src="images/facebook.png" alt="Facebook"></div>
+      <div class="icon"><img src="images/apple.jpg" alt="Apple"></div>
+      <div class="icon3"><img src="images/link.png" alt="LinkedIn"></div>
+    </div>
+  </div>
+  <img class="logo" src="images\SDGGROUP.png" alt="Lentes / Logo">
+  <script>
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value.trim();
+      if (username !== "") {
+        document.getElementById('welcomeTitle').textContent = "Welcome @" + username;
+        console.log("Usuario logueado: " + username);
+      }
+    });
+  </script>
+</body>
+</html>

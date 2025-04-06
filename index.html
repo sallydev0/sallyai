@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dora Dereli" />
+
+    <!-- Title -->
+    <title>Sally.ai</title>
+
+    <!-- Stylesheet and favicon -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="style">
+</head>
+
+<body data-theme="light">
+    <!-- Header and navigation -->
+    <header class="header">
+        <a href="index.html" class="logo">Main Page</a>
+        <nav>
+            <a href="sally_V1.html">Try Sally</a>
+            <a href="mood.html">Login</a>
+        </nav>
+
+        <!-- Theme toggle button -->
+        <button id="theme-toggle">
+            <!-- SVG icon for theme toggle -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+                <g id="theme-toggle-dark">
+                    <path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" />
+                </g>
+                <g id="theme-toggle-light">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                        d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+                </g>
+            </svg>
+            <span class="u-visually-hidden">Toggle theme</span>
+        </button>
+    </header>
+
+    <!-- Main content -->
+    <main class="container home-page">
+        <!-- Hero section -->
+        <section class="section home-hero">
+            <div class="orbs">
+                <div id="orb1"></div>
+                <div id="orb2"></div>
+                <div id="orb3"></div>
+            </div>
+            <h1>Just ask Sally</h1>
+            <p class="titlespcr">👋 Hi there! Sally is an AI legal consultant designed to make legal queries a thing of
+                the past. 
+            </p>
+             <div class="selected-project">
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Ask Sally...">
+                    <button id="ask-button" type="button">Ask</button> <!-- Add type="button" -->
+                </div>
+        </section>
+
+        <div class="titlespcr"></div>
+
+        <!-- Projects section -->
+
+        <section class="section home-hero">
+
+        <!-- Value proposition -->
+         
+        <div class="orbs">
+            <div id="orb3"></div>
+            <div id="orb1"></div>
+          </div>
+
+        <section id="skills-tools" class="section">
+            <h2>What we bring to the table:</h2>
+                <ul>
+                    <li>Cost effective legal consulting</li>
+                    <li>24/7 uninterrupted service</li>
+                    <li>International legal advice</li>
+                    <li>Infinetly scalable</li>
+                </ul>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section id="contact" class="section">
+            <h2 class="gradient-title">Contact Information:</h2>
+            <p>Email: <a href="mailto:doradereli@gmail.com">(enter sally mail)</a></p>
+            <p>Phone Number: +34 sally</a>
+            </p>
+        </section>
+    </main>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
